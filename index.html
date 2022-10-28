@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Javascript Validation</title>
+		<link rel="stylesheet" href="./CSS/mystyles.css" />
+	</head>
+	<body>
+		<div class="fix-to-body">
+			<div class="main-container">
+				<h1>Registration Form</h1>
+				<form
+					name="main-form"
+					action="./submit.html"
+					post="GET"
+					onsubmit="return mainFunc()"
+				>
+					<label for="firstname"
+						>First Name (minimum 6 characters)<span class="star">*</span></label
+					>
+					<input type="text" name="firstName" id="firstname" required />
+					<br /><br />
+					<label for="lastname">Last Name<span class="star">*</span></label>
+					<input type="text" name="lastName" id="lastname" required />
+					<br /><br />
+					<label for="email">Email ID<span class="star">*</span></label>
+					<input type="email" name="email" id="email" required />
+					<br /><br />
+					<label for="pass"
+						>Password (minimum 6 characters)<span class="star">*</span></label
+					>
+					<input type="password" name="password" id="pass" required />
+					<br /><br />
+					<label for="add">Address<span class="star">*</span></label>
+					<textarea
+						name="address"
+						id="add"
+						cols="30"
+						rows="10"
+						required
+					></textarea>
+					<br /><br />
+					<label for="number">Mobile Number<span class="star">*</span></label>
+					<input type="number" name="number" id="number" required />
+					<br /><br />
+					<div class="btn-section">
+						<button type="reset" class="btn-reset">Reset Form</button>
+						<button type="submit" class="btn-submit">Submit Form</button>
+					</div>
+				</form>
+				<script src="./script.js"></script>
+			</div>
+		</div>
+	</body>
+</html>
